@@ -9,8 +9,7 @@ package Banco;
  *
  * @author 11191013761
  */
-public class Conta {
-    
+public abstract class  Conta {
     int numero;
     private Cliente titular = new Cliente();
     private double saldo; 
@@ -67,9 +66,9 @@ public class Conta {
 
 if(this.saque(valor) == true){
     destino.deposita(valor);
+
 }
     
 }
-void atualiza(double taxa) {
-this.saldo = this.saldo +(this.saldo * taxa);}
+abstract void  atualiza(double taxa);
 }

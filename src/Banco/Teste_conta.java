@@ -13,11 +13,11 @@ public class Teste_conta {
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in); 
         System.out.println("Digite um valor: ");
-        Conta c1 = new Conta();
+        Conta c1 = new ContaCorrente();
         c1.deposita(entrada.nextDouble()); 
         
         System.out.println("Digite um valor para a conta dois: ");
-        Conta c2 = new Conta();
+        Conta c2 = new ContaCorrente();
         c2.deposita(entrada.nextDouble());
         System.out.println("Saldo da conta um: "+c1.getSaldo());
         System.out.println("Saldo da conta dois: "+c2.getSaldo());

@@ -11,9 +11,9 @@ package Banco;
  */
 public class Teste_conta2 {
     public static void main(String[] args) {
-        Conta joao = new Conta(); 
+        Conta joao = new ContaCorrente();
         joao.deposita(1000);
-        Conta maria = new Conta(); 
+        Conta maria = new ContaCorrente();
         maria.deposita(500);
         joao.transfere(maria, 2000);
         System.out.println("Saldo de Maria: "+maria.getSaldo());

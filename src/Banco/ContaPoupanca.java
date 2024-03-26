@@ -10,8 +10,9 @@ package Banco;
  * @author lucas
  */
 class ContaPoupanca extends Conta {
-void atualiza(double taxa) {
-// utilize o método deposita para aplicar a taxa da Poupança ao saldo
-super.deposita(this.getSaldo()*taxa*3);}
 
+    @Override
+    void atualiza(double taxa) {
+        super.deposita(this.getSaldo() * taxa * 3);
+    }
 }

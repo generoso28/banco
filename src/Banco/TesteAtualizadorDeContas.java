@@ -2,7 +2,7 @@ package Banco;
 
 public class TesteAtualizadorDeContas {
     public static void main(String[] args) {
-        Conta c = new Conta();
+        Conta c = new ContaCorrente();
         Conta cc = new ContaCorrente();
         Conta cp = new ContaPoupanca();
         c.deposita(1000);
