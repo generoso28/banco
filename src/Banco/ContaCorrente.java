@@ -9,7 +9,10 @@ package Banco;
  *
  * @author lucas
  */
-class ContaCorrente extends Conta {
+class ContaCorrente extends Conta implements Tributavel{
+    public double calculaTributos() {
+        return this.getSaldo() * 0.01;
+    }
     @Override
      void atualiza(double taxa) {
 // utilize o método deposita para aplicar a taxa Conta Corrente ao saldo
